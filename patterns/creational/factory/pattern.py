@@ -42,14 +42,12 @@ class Dialog(ABC):
 
 
 class WindowsDialog(Dialog):
-
     @staticmethod
     def create_button() -> "Button":
         return WindowsButton()
 
 
 class WebDialog(Dialog):
-
     @staticmethod
     def create_button() -> "Button":
         return WebButton()

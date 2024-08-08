@@ -10,7 +10,7 @@ python -m unittest
 |    <b>Creational<b>     |          |
 |    Abstract Factory     | &#x2611; |
 |     Factory Method      | &#x2611; |
-|         Builder         | &#x2610; |
+|         Builder         | &#x2611; |
 |     Factory Method      | &#x2610; |
 |       Object Pool       | &#x2610; |
 |        Prototype        | &#x2610; |
