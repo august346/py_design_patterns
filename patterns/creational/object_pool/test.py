@@ -20,12 +20,12 @@ class TWorker:
 class TestFactory(unittest.IsolatedAsyncioTestCase):
     @parameterized.expand(
         [
-            [5, 6, 2.1, False],
-            [5, 6, 1.9, True],
-            [5, 5, 1.1, False],
-            [5, 5, 0.9, True],
-            [4, 4, 1.1, False],
-            [4, 4, 0.9, True],
+            [5, 6, 0.25, False, 0.1],
+            [5, 6, 0.05, True, 0.1],
+            [5, 5, 0.15, False, 0.1],
+            [5, 5, 0.05, True, 0.1],
+            [4, 4, 0.15, False, 0.1],
+            [4, 4, 0.05, True, 0.1],
             [10, 100, 1.1, False, 0.1],
             [10, 100, 0.9, True, 0.1],
         ]
