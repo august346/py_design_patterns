@@ -12,7 +12,7 @@ python -m unittest
 |     Factory Method      | &#x2611; |
 |         Builder         | &#x2611; |
 |       Object Pool       | &#x2611; |
-|        Prototype        | &#x2610; |
+|        Prototype        | &#x2611; |
 |        Singleton        | &#x2610; |
 |                         |          |
 |    <b>Structural</b>    |          |
