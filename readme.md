@@ -13,7 +13,7 @@ python -m unittest
 |         Builder         | &#x2611; |
 |       Object Pool       | &#x2611; |
 |        Prototype        | &#x2611; |
-|        Singleton        | &#x2610; |
+|        Singleton        | &#x2611; |
 |                         |          |
 |    <b>Structural</b>    |          |
 |         Adapter         | &#x2610; |
