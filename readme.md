@@ -11,8 +11,7 @@ python -m unittest
 |    Abstract Factory     | &#x2611; |
 |     Factory Method      | &#x2611; |
 |         Builder         | &#x2611; |
-|     Factory Method      | &#x2610; |
-|       Object Pool       | &#x2610; |
+|       Object Pool       | &#x2611; |
 |        Prototype        | &#x2610; |
 |        Singleton        | &#x2610; |
 |                         |          |
