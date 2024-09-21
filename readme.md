@@ -18,7 +18,7 @@ python -m unittest
 |    <b>Structural</b>    |          |
 |         Adapter         | &#x2611; |
 |         Bridge          | &#x2611; |
-|        Composite        | &#x2610; |
+|        Composite        | &#x2611; |
 |        Decorator        | &#x2610; |
 |         Facade          | &#x2610; |
 |        Flyweight        | &#x2610; |

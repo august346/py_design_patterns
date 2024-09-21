@@ -1,0 +1,22 @@
+- total_price: 10
+  struct: [ 10 ]
+
+- total_price: 30
+  struct:
+    - [ 10, 20 ]
+
+- total_price: 50
+  struct:
+    - [ 10, 15, 25 ]
+
+- total_price: 100
+  struct:
+    - [ 20, [ 30, 50 ] ]
+
+- total_price: 200
+  struct:
+    - [ 50, [ 50, [ 30, 70 ] ] ]
+
+- total_price: 150
+  struct:
+    - [ 30, [ 40, [ 30, [ 50 ] ] ] ]
