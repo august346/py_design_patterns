@@ -23,7 +23,7 @@ python -m unittest
 |         Facade          | &#x2611; |
 |        Flyweight        | &#x2611; |
 |   Private Class Data    | &#x2611; |
-|          Proxy          | &#x2610; |
+|          Proxy          | &#x2611; |
 |                         |          |
 |    <b>Behavioral</b>    |          |
 | Chain of Responsibility | &#x2610; |
