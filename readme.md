@@ -26,8 +26,8 @@ python -m unittest
 |          Proxy          | &#x2611; |
 |                         |          |
 |    <b>Behavioral</b>    |          |
-| Chain of Responsibility | &#x2610; |
-|         Command         | &#x2610; |
+| Chain of Responsibility | &#x2611; |
+|         Command         | &#x2611; |
 |       Interpreter       | &#x2610; |
 |        Iterator         | &#x2610; |
 |        Mediator         | &#x2610; |
