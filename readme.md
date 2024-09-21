@@ -20,7 +20,7 @@ python -m unittest
 |         Bridge          | &#x2611; |
 |        Composite        | &#x2611; |
 |        Decorator        | &#x2611; |
-|         Facade          | &#x2610; |
+|         Facade          | &#x2611; |
 |        Flyweight        | &#x2610; |
 |   Private Class Data    | &#x2610; |
 |          Proxy          | &#x2610; |
