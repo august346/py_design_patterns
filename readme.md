@@ -19,7 +19,7 @@ python -m unittest
 |         Adapter         | &#x2611; |
 |         Bridge          | &#x2611; |
 |        Composite        | &#x2611; |
-|        Decorator        | &#x2610; |
+|        Decorator        | &#x2611; |
 |         Facade          | &#x2610; |
 |        Flyweight        | &#x2610; |
 |   Private Class Data    | &#x2610; |
