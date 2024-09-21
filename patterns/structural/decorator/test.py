@@ -1,8 +1,10 @@
+import logging
+import tempfile
 import unittest
 
 from parameterized import parameterized
 
-from . import bin_decorator, func_to_str
+from . import CompressionDecorator, FileDataSource, EncryptionDecorator, bin_decorator, func_to_str
 
 
 class TestDecorator(unittest.TestCase):
@@ -14,6 +16,29 @@ class TestDecorator(unittest.TestCase):
         actual_result: str = bin_decorator(func_to_str)(inp)
 
         self.assertEqual(actual_result, expected_result)
+
+
+class TestClassBasedDecorator(unittest.TestCase):
+    def setUp(self):
+        self.temp_file = tempfile.NamedTemporaryFile(delete=False)
+        self.file_name = self.temp_file.name
+        self.temp_file.close()
+
+    def tearDown(self):
+        try:
+            self.temp_file.close()
+        except Exception as e:
+            logging.warning(e)
+
+    @parameterized.expand([["foo"], ["bar"], ["baz"]])
+    def test(self, inp: str):
+        fds = FileDataSource(self.file_name)
+        cds = CompressionDecorator(fds)
+        eds = EncryptionDecorator(cds, "secret_key")
+
+        eds.write(inp)
+
+        self.assertEqual(eds.read(), inp)
 
 
 if __name__ == '__main__':
