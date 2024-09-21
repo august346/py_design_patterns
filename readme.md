@@ -21,8 +21,8 @@ python -m unittest
 |        Composite        | &#x2611; |
 |        Decorator        | &#x2611; |
 |         Facade          | &#x2611; |
-|        Flyweight        | &#x2610; |
-|   Private Class Data    | &#x2610; |
+|        Flyweight        | &#x2611; |
+|   Private Class Data    | &#x2611; |
 |          Proxy          | &#x2610; |
 |                         |          |
 |    <b>Behavioral</b>    |          |
