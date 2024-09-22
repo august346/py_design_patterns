@@ -35,6 +35,6 @@ python -m unittest
 |       Null Object       | &#x2611; |
 |        Observer         | &#x2611; |
 |          State          | &#x2611; |
-|        Strategy         | &#x2610; |
+|        Strategy         | &#x2611; |
 |     Template Method     | &#x2610; |
 |         Visitor         | &#x2610; |
