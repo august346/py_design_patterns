@@ -34,7 +34,7 @@ python -m unittest
 |         Memento         | &#x2611; |
 |       Null Object       | &#x2611; |
 |        Observer         | &#x2611; |
-|          State          | &#x2610; |
+|          State          | &#x2611; |
 |        Strategy         | &#x2610; |
 |     Template Method     | &#x2610; |
 |         Visitor         | &#x2610; |
