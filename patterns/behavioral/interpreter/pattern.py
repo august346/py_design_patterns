@@ -16,7 +16,7 @@ class Number(Expression):
         return self._value
 
 
-class BinaryOperation(Expression):
+class BinaryOperation(Expression, ABC):
     def __init__(self, left: Expression, right: Expression):
         self._left = left
         self._right = right
