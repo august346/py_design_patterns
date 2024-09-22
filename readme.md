@@ -37,4 +37,4 @@ python -m unittest
 |          State          | &#x2611; |
 |        Strategy         | &#x2611; |
 |     Template Method     | &#x2611; |
-|         Visitor         | &#x2610; |
+|         Visitor         | &#x2611; |
