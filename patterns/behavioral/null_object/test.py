@@ -1,9 +1,9 @@
 import unittest
-from typing import Callable, Optional
+from typing import Callable
 
 from parameterized import parameterized
 
-from . import UserFactory, NullUser, RealUser, AbstractUser, Something
+from . import UserFactory, AbstractUser
 
 
 class TestNullObjectPattern(unittest.TestCase):

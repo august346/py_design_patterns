@@ -33,7 +33,7 @@ python -m unittest
 |        Mediator         | &#x2611; |
 |         Memento         | &#x2611; |
 |       Null Object       | &#x2611; |
-|        Observer         | &#x2610; |
+|        Observer         | &#x2611; |
 |          State          | &#x2610; |
 |        Strategy         | &#x2610; |
 |     Template Method     | &#x2610; |
