@@ -32,7 +32,7 @@ python -m unittest
 |        Iterator         | &#x2611; |
 |        Mediator         | &#x2611; |
 |         Memento         | &#x2611; |
-|       Null Object       | &#x2610; |
+|       Null Object       | &#x2611; |
 |        Observer         | &#x2610; |
 |          State          | &#x2610; |
 |        Strategy         | &#x2610; |
