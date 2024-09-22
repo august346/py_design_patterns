@@ -1,20 +1,23 @@
 import unittest
+from typing import Callable, Optional
 
-from . import UserFactory, NullUser, RealUser
+from parameterized import parameterized
+
+from . import UserFactory, NullUser, RealUser, AbstractUser, Something
 
 
 class TestNullObjectPattern(unittest.TestCase):
-    def test_real_user(self):
-        user = UserFactory.get_user("Alice")
-        self.assertIsInstance(user, RealUser)
-        self.assertEqual(user.get_name(), "Alice")
-        self.assertFalse(user.is_null())
-
-    def test_null_user(self):
-        user = UserFactory.get_null_user()
-        self.assertIsInstance(user, NullUser)
-        self.assertEqual(user.get_name(), "Not Available")
-        self.assertTrue(user.is_null())
+    @parameterized.expand(
+        [
+            [lambda: UserFactory.get_user("Alice"), "Alice", False, True],
+            [lambda: UserFactory.get_null_user(), "Not Available", True, False],
+        ]
+    )
+    def test(self, get_user: Callable[[], AbstractUser], name: str, is_null: bool, result_is_something: bool):
+        user: AbstractUser = get_user()
+        self.assertEqual(user.get_name(), name)
+        [self.assertFalse, self.assertTrue][is_null](user.is_null())
+        [self.assertIsNone, self.assertIsNotNone][result_is_something](user.do())
 
     def test_user_not_found(self):
         user_name = "Bob"

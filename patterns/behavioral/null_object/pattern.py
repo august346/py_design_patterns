@@ -1,9 +1,18 @@
 from abc import ABC, abstractmethod
+from typing import Optional
+
+
+class Something:
+    pass
 
 
 class AbstractUser(ABC):
     @abstractmethod
     def get_name(self) -> str:
+        pass
+
+    @abstractmethod
+    def do(self) -> Optional[Something]:
         pass
 
     @abstractmethod
@@ -18,6 +27,9 @@ class RealUser(AbstractUser):
     def get_name(self) -> str:
         return self._name
 
+    def do(self) -> Optional[Something]:
+        return Something()
+
     def is_null(self) -> bool:
         return False
 
@@ -25,6 +37,9 @@ class RealUser(AbstractUser):
 class NullUser(AbstractUser):
     def get_name(self) -> str:
         return "Not Available"
+
+    def do(self) -> Optional[Something]:
+        return
 
     def is_null(self) -> bool:
         return True
