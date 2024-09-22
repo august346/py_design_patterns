@@ -31,7 +31,7 @@ python -m unittest
 |       Interpreter       | &#x2611; |
 |        Iterator         | &#x2611; |
 |        Mediator         | &#x2611; |
-|         Memento         | &#x2610; |
+|         Memento         | &#x2611; |
 |       Null Object       | &#x2610; |
 |        Observer         | &#x2610; |
 |          State          | &#x2610; |
