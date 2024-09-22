@@ -30,7 +30,7 @@ python -m unittest
 |         Command         | &#x2611; |
 |       Interpreter       | &#x2611; |
 |        Iterator         | &#x2611; |
-|        Mediator         | &#x2610; |
+|        Mediator         | &#x2611; |
 |         Memento         | &#x2610; |
 |       Null Object       | &#x2610; |
 |        Observer         | &#x2610; |
