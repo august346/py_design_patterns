@@ -28,7 +28,7 @@ python -m unittest
 |    <b>Behavioral</b>    |          |
 | Chain of Responsibility | &#x2611; |
 |         Command         | &#x2611; |
-|       Interpreter       | &#x2610; |
+|       Interpreter       | &#x2611; |
 |        Iterator         | &#x2611; |
 |        Mediator         | &#x2610; |
 |         Memento         | &#x2610; |
